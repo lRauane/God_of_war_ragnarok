@@ -36,4 +36,16 @@ html {
   .container {
     max-width: 124.8rem;
   }
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+}
+.subtitle span {
+  font-weight: 500;
+  line-height: 2.2rem;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-left: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
