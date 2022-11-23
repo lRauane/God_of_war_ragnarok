@@ -266,4 +266,36 @@ header .platform ul li {
   color: #bdc2cb;
   font-weight: 400;
   margin-top: 1.2rem;
+}
+
+.s-story {
+  width: 100%;
+  height: 89.9rem;
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+  background: url("../../assets/bg-story.png") top center no-repeat;
+  background-size: cover;
+}
+.s-story .left {
+  width: 100%;
+  max-width: 62.9rem;
+}
+.s-story .left h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.4rem;
+  max-width: 50.2rem;
+}
+.s-story .left p {
+  margin-bottom: 5.6rem;
+}
+.s-story .left .corp {
+  display: flex;
+  align-items: center;
+}
+.s-story .left .corp p {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 160%;
+  max-width: 32.4rem;
+  margin-left: 4.6rem;
 }/*# sourceMappingURL=main.css.map */
