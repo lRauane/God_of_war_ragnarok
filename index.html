@@ -49,10 +49,11 @@
       </div>
       <div class="right">
         <span>Assista ao trailer</span>
-        <button>
+        <button class="modal-btn">
           <img src="/assets/thumbnail.gif" alt="thumbnail do trailer" class="thumnail">
           <img src="/assets/play.svg" alt="icon play" class="play">
         </button>
+
         <div class="year-old">
           <img src="/assets/faixa-etaria.png" alt="Faixa etária">
           <p>Drogas Licitas, linguagem Imprópia, Violência Extrema</p>
@@ -212,6 +213,14 @@
       </div>
     </div>
   </section>
+
+  <!-- modal video -->
+  <div class="container-modal">
+    <div class="modal-overlay flex">
+        <iframe src="https://www.youtube.com/embed/hfJ4Km46A-0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="close-btn">X</button>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/components/js/main.js"></script>
