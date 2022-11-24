@@ -443,7 +443,7 @@ header .platform ul li {
 @media (max-width: 1200px) {
   .s-story {
     background-image: none;
-    padding: 2rem 0;
+    padding: 6rem 0;
   }
   .s-story .container {
     flex-direction: column;
@@ -465,7 +465,6 @@ header .platform ul li {
   .s-story .kratos-atreus {
     left: 0;
     top: 0;
-    margin-top: 2.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -475,9 +474,6 @@ header .platform ul li {
   }
 }
 @media (max-width: 560px) {
-  .s-story .kratos-atreus {
-    margin-bottom: 4rem;
-  }
   .s-story .left h2 {
     font-size: 3rem;
   }
@@ -491,6 +487,9 @@ header .platform ul li {
   .s-story .left .corp p {
     margin-left: 0;
     margin-top: 3rem;
+  }
+  .s-story .kratos-atreus {
+    margin-bottom: 4rem;
   }
 }
 

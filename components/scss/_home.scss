@@ -248,7 +248,7 @@
 
   @media (max-width: 1200px) {
     background-image: none;
-    padding: 2rem 0;
+    padding: 6rem 0;
     .container {
       flex-direction: column;
     }
@@ -269,7 +269,6 @@
     .kratos-atreus {
       left: 0;
       top: 0;
-      margin-top: 2.5rem;
       margin-bottom: 3rem;
     }
   }
@@ -282,9 +281,7 @@
     }
   }
   @media (max-width: 560px) {
-    .kratos-atreus{
-      margin-bottom: 4rem;
-    }
+
     .left{
       h2{
         font-size: 3rem;
@@ -300,6 +297,9 @@
           margin-top: 3rem;
         }
       }
+    }
+    .kratos-atreus{
+      margin-bottom: 4rem;
     }
   }
 }
