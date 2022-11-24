@@ -22,6 +22,20 @@
     margin-top: 20px;
     font-size: 4em;
   }
+  @media (max-width: 991px){
+    iframe{
+    max-width: 70rem;
+    }
+  }
+  @media (max-width: 560px){
+    iframe{
+    max-width: 50rem;
+    height: 25rem;
+    }
+    .close-btn{
+      top: 0;
+    }
+  }
 }
 .open-modal {
   visibility: visible;

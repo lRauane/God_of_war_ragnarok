@@ -1,7 +1,8 @@
 .s-hero {
   padding-top: 16.4rem;
   padding-bottom: 10.3rem;
-  background: url("../../assets/bg-hero.jpg") center center no-repeat;
+  background: url("../../assets/bg-hero.jpg") top center no-repeat;
+  background-attachment: fixed;
   height: 80rem;
   .container {
     display: flex;
@@ -61,20 +62,20 @@
       border: 2px solid #3265ea;
       overflow: hidden;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-bottom: 5.1rem;;
-      .thumnail{
+      margin-bottom: 5.1rem;
+      .thumnail {
         width: 100%;
       }
-      .play{
+      .play {
         position: absolute;
         bottom: 2.5rem;
         left: 3.2rem;
       }
     }
-    .year-old{
+    .year-old {
       display: flex;
       align-items: center;
-      p{
+      p {
         color: #ffffff;
         font-size: 1.6rem;
         line-height: 1.7rem;
@@ -84,22 +85,95 @@
       }
     }
   }
+  @media (max-width: 1200px) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+    .left {
+      max-width: 64rem;
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    .right {
+      top: 0;
+      max-width: 35.3rem;
+      button {
+        height: 19.7rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 6rem 0;
+    background-size: cover;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .left {
+      text-align: center;
+      .value {
+        justify-content: center;
+      }
+    }
+    .right {
+      text-align: center;
+      margin-top: 3rem;
+      .year-old {
+        flex-direction: column;
+        p {
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .left {
+      h1 {
+        font-size: 6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+      .value {
+        flex-direction: column;
+      }
+    }
+    .right {
+      max-width: 31rem;
+      button {
+        height: 17.7rem;
+      }
+      .year-old {
+        p {
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
 }
 
-.s-info-geral{
+.s-info-geral {
   width: 100%;
   height: 18rem;
   display: flex;
   align-items: center;
-  ul{
+  ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    li{
+    li {
       display: flex;
       flex-direction: column;
       align-items: center;
-      span{
+      span {
         display: block;
         text-align: center;
         font-size: 1.6rem;
@@ -110,33 +184,54 @@
       }
     }
   }
+  @media (max-width: 1200px) {
+    padding: 4rem 0;
+    height: auto;
+    ul {
+      flex-wrap: wrap;
+      gap: 3rem 0;
+      li {
+        width: 33.3%;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    ul {
+      li {
+        width: 50%;
+        span {
+          max-width: 14.5rem;
+        }
+      }
+    }
+  }
 }
 
-.s-story{
+.s-story {
   width: 100%;
   height: 89.9rem;
   padding-top: 16rem;
   padding-bottom: 8rem;
-  background: url('../../assets/bg-story.png') top center no-repeat;
+  background: url("../../assets/bg-story.png") top center no-repeat;
   overflow: hidden;
-  .container{
+  .container {
     display: flex;
     align-items: center;
   }
-  .left{
+  .left {
     width: 100%;
-    h2{
+    h2 {
       margin-top: 2.8rem;
       margin-bottom: 2.4rem;
       max-width: 50.2rem;
     }
-    p{
+    p {
       margin-bottom: 5.6rem;
     }
-    .corp{
+    .corp {
       display: flex;
       align-items: center;
-      p{
+      p {
         margin-bottom: 0;
         font-size: 1.6rem;
         line-height: 160%;
@@ -145,35 +240,92 @@
       }
     }
   }
-  .kratos-atreus{
+  .kratos-atreus {
     position: relative;
     top: -45px;
     left: 110px;
   }
+
+  @media (max-width: 1200px) {
+    background-image: none;
+    padding: 2rem 0;
+    .container {
+      flex-direction: column;
+    }
+    .left{
+      max-width: 100%;
+      text-align: center;
+      .subtitle{
+        justify-content: center;
+      }
+      h2{
+        max-width: 75%;
+        margin: 2rem auto;
+      }
+      .corp{
+        justify-content: center;
+      }
+    }
+    .kratos-atreus {
+      left: 0;
+      top: 0;
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .left{
+      h2{
+        max-width: 95%;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .kratos-atreus{
+      margin-bottom: 4rem;
+    }
+    .left{
+      h2{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+      }
+      .corp{
+        flex-direction: column;
+        p{
+          margin-left: 0;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
 }
 
-.s-characters{
+.s-characters {
   padding-top: 17.6rem;
   padding-bottom: 14.3rem;
   background: url("../../assets/bg-characters.png") center center;
   overflow: hidden;
-  .description{
+  .description {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    .left{
+    .left {
       width: 100%;
       max-width: 61.2rem;
-      h2{
+      h2 {
         margin-top: 2.8rem;
         margin-bottom: 2.4rem;
       }
     }
-    .right{
+    .right {
       display: flex;
       align-items: center;
-      .text{
-        span{
+      .text {
+        span {
           display: block;
           font-weight: 500;
           font-size: 1.8rem;
@@ -182,10 +334,54 @@
           max-width: 14.3rem;
           margin-top: 2.2rem;
         }
-      }.open-modal {
+      }
+      .open-modal {
         visibility: visible;
         z-index: 10;
       }
     }
   }
+  @media (max-width: 1200px) {
+    padding: 6rem 0;
+  }
+  @media (max-width: 991px){
+    .description{
+      flex-direction: column;
+      align-items: center;
+      .left{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+    .description{
+      .left{
+        h2{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1.6rem;
+        }
+      }
+      .right{
+        flex-direction: column;
+        align-items: center;
+        .text{
+          img{
+            margin: 0 auto;
+          }
+          span{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .slider-characters{
+      margin-top: 4rem;
+    }
+  }
+
 }

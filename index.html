@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>God Of War</title>
+  <link rel="icon" type="image/png" href="/assets/">
+
+  <!-- css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./components/scss/main.css">
+  
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -21,9 +26,9 @@
 <body>
   <header>
     <div class="container">
-      <img src="/assets/sony.svg" class="sony" alt="logo da sony">
-      <img src="/assets/logo.jpg" alt="logo God Of War" class="logo">
-      <div class="platform">
+      <img src="/assets/sony.svg" class="sony" alt="logo da sony" data-aos="fade-right">
+      <img src="/assets/logo.jpg" data-aos="zoom-in" alt="logo God Of War" class="logo">
+      <div class="platform" data-aos="fade-left">
         <span>Disponível para</span>
         <ul>
           <li>PS4</li>
@@ -35,7 +40,7 @@
 
   <section class="s-hero">
     <div class="container">
-      <div class="left">
+      <div class="left" data-aos="fade-right">
         <h3 class="subtitle">
           <img src="assets/bullets.svg" alt="Bullets">
           <span>Lançamento dia 09/11/2022</span>
@@ -47,7 +52,7 @@
           </div>
         </h3>
       </div>
-      <div class="right">
+      <div class="right" data-aos="fade-up">
         <span>Assista ao trailer</span>
         <button class="modal-btn">
           <img src="/assets/thumbnail.gif" alt="thumbnail do trailer" class="thumnail">
@@ -62,7 +67,7 @@
     </div>
   </section>
 
-  <section class="s-info-geral">
+  <section class="s-info-geral" data-aos="fade-up">
     <div class="container">
       <ul>
         <li>
@@ -95,7 +100,7 @@
 
   <section class="s-story">
     <div class="container">
-      <div class="left">
+      <div class="left" data-aos="fade-right">
         <h3 class="subtitle">
           <img src="/assets/bullets.svg" alt="Bullets">
           <span>Sony Interactive Entertainment</span>
@@ -111,14 +116,14 @@
           <p>Do Santa Monica Studio, esta é a sequência da aclamada versão de 2018 de God of War.</p>
         </div>
       </div>
-      <img src="/assets/kratos-atreus.png" alt="kratos-atreus" class="kratos-atreus">
+      <img src="/assets/kratos-atreus.png" alt="kratos-atreus" data-aos="fade-left" class="kratos-atreus">
     </div>
   </section>
 
   <section class="s-characters">
     <div class="container">
       <div class="description">
-        <div class="left">
+        <div class="left" data-aos="fade-right">
           <h3 class="subtitle">
             <img src="/assets/bullets.svg" alt="Bullets">
             <span>Conheça os personagens</span>
@@ -126,7 +131,7 @@
           <h2>Toda grande aventura é uma história esperando para ser contada</h2>
           <p>Reviva o começo da jornada nórdica épica de Kratos e Atreus em Mitos de Midgard. Um alerta para quem não está familiarizado com God of War: spoilers à frente.</p>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-left">
           <img src="/assets/axel.png" alt="">
           <div class="text">
             <img src="/assets/logo.jpg" alt="">
@@ -134,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div class="slider-characters">
+      <div class="slider-characters" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card-character">
@@ -223,6 +228,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/components/js/main.js"></script>
 </body>
 

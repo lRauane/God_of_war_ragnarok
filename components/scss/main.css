@@ -53,11 +53,31 @@ html {
   color: #ffffff;
   margin-left: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .subtitle span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .subtitle {
+    justify-content: center;
+  }
+}
+@media (max-width: 560px) {
+  .subtitle span {
+    font-size: 1.6rem;
+  }
+}
 
 h1 {
   font-weight: 700;
   font-size: 12.4rem;
   line-height: 97.5%;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 h2 {
@@ -83,11 +103,15 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 52rem;
+  height: 48rem;
   overflow: hidden;
   margin-bottom: 2.4rem;
 }
 .card-character .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 0.3s ease;
 }
 .card-character .image button {
@@ -153,11 +177,26 @@ header .platform ul li {
   font-size: 1.4rem;
   line-height: 1.5rem;
 }
+@media (max-width: 560px) {
+  header {
+    height: 7rem;
+  }
+  header .sony {
+    display: none;
+  }
+  header .logo {
+    max-width: 140px;
+  }
+  header .platform span {
+    display: none;
+  }
+}
 
 .s-hero {
   padding-top: 16.4rem;
   padding-bottom: 10.3rem;
-  background: url("../../assets/bg-hero.jpg") center center no-repeat;
+  background: url("../../assets/bg-hero.jpg") top center no-repeat;
+  background-attachment: fixed;
   height: 80rem;
 }
 .s-hero .container {
@@ -241,6 +280,79 @@ header .platform ul li {
   max-width: 27.4rem;
   margin-left: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .s-hero {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+  }
+  .s-hero .left {
+    max-width: 64rem;
+  }
+  .s-hero .left p {
+    font-size: 1.8rem;
+  }
+  .s-hero .right {
+    top: 0;
+    max-width: 35.3rem;
+  }
+  .s-hero .right button {
+    height: 19.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .s-hero {
+    padding: 6rem 0;
+    background-size: cover;
+  }
+  .s-hero .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-hero .left {
+    text-align: center;
+  }
+  .s-hero .left .value {
+    justify-content: center;
+  }
+  .s-hero .right {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .s-hero .right .year-old {
+    flex-direction: column;
+  }
+  .s-hero .right .year-old p {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-hero .left h1 {
+    font-size: 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .s-hero .left p {
+    font-size: 1.4rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .s-hero .left .value {
+    flex-direction: column;
+  }
+  .s-hero .right {
+    max-width: 31rem;
+  }
+  .s-hero .right button {
+    height: 17.7rem;
+  }
+  .s-hero .right .year-old p {
+    line-height: 2.4rem;
+  }
+}
 
 .s-info-geral {
   width: 100%;
@@ -266,6 +378,27 @@ header .platform ul li {
   color: #bdc2cb;
   font-weight: 400;
   margin-top: 1.2rem;
+}
+@media (max-width: 1200px) {
+  .s-info-geral {
+    padding: 4rem 0;
+    height: auto;
+  }
+  .s-info-geral ul {
+    flex-wrap: wrap;
+    gap: 3rem 0;
+  }
+  .s-info-geral ul li {
+    width: 33.3%;
+  }
+}
+@media (max-width: 560px) {
+  .s-info-geral ul li {
+    width: 50%;
+  }
+  .s-info-geral ul li span {
+    max-width: 14.5rem;
+  }
 }
 
 .s-story {
@@ -307,6 +440,59 @@ header .platform ul li {
   top: -45px;
   left: 110px;
 }
+@media (max-width: 1200px) {
+  .s-story {
+    background-image: none;
+    padding: 2rem 0;
+  }
+  .s-story .container {
+    flex-direction: column;
+  }
+  .s-story .left {
+    max-width: 100%;
+    text-align: center;
+  }
+  .s-story .left .subtitle {
+    justify-content: center;
+  }
+  .s-story .left h2 {
+    max-width: 75%;
+    margin: 2rem auto;
+  }
+  .s-story .left .corp {
+    justify-content: center;
+  }
+  .s-story .kratos-atreus {
+    left: 0;
+    top: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .s-story .left h2 {
+    max-width: 95%;
+  }
+}
+@media (max-width: 560px) {
+  .s-story .kratos-atreus {
+    margin-bottom: 4rem;
+  }
+  .s-story .left h2 {
+    font-size: 3rem;
+  }
+  .s-story .left p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+  .s-story .left .corp {
+    flex-direction: column;
+  }
+  .s-story .left .corp p {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
 
 .s-characters {
   padding-top: 17.6rem;
@@ -344,6 +530,46 @@ header .platform ul li {
   visibility: visible;
   z-index: 10;
 }
+@media (max-width: 1200px) {
+  .s-characters {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .s-characters .description {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-characters .description .left {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-characters {
+    padding: 4rem 0;
+  }
+  .s-characters .description .left h2 {
+    font-size: 3rem;
+  }
+  .s-characters .description .left p {
+    font-size: 1.6rem;
+  }
+  .s-characters .description .right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-characters .description .right .text img {
+    margin: 0 auto;
+  }
+  .s-characters .description .right .text span {
+    max-width: 100%;
+  }
+  .s-characters .slider-characters {
+    margin-top: 4rem;
+  }
+}
 
 .modal-overlay {
   position: fixed;
@@ -369,6 +595,20 @@ header .platform ul li {
   color: #ffffff;
   margin-top: 20px;
   font-size: 4em;
+}
+@media (max-width: 991px) {
+  .modal-overlay iframe {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 560px) {
+  .modal-overlay iframe {
+    max-width: 50rem;
+    height: 25rem;
+  }
+  .modal-overlay .close-btn {
+    top: 0;
+  }
 }
 
 .open-modal {
