@@ -13,8 +13,6 @@
 
 ![God-Of-War](https://user-images.githubusercontent.com/102835801/203819935-829980f3-6661-4460-9cdc-7208bbe9b0b8.png)
 
-
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
